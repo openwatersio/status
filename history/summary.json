@@ -22,7 +22,7 @@
     "url": "wss://ais.openwaters.io/v1/stream",
     "icon": "https://icons.duckduckgo.com/ip3/ais.openwaters.io.ico",
     "slug": "ais-web-socket",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
