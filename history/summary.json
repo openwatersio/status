@@ -22,19 +22,19 @@
     "url": "wss://ais.openwaters.io/v1/stream",
     "icon": "https://icons.duckduckgo.com/ip3/ais.openwaters.io.ico",
     "slug": "ais-web-socket",
-    "status": "down",
-    "uptime": "62.00%",
-    "uptimeDay": "62.00%",
-    "uptimeWeek": "62.00%",
-    "uptimeMonth": "62.00%",
-    "uptimeYear": "62.00%",
+    "status": "up",
+    "uptime": "54.08%",
+    "uptimeDay": "54.08%",
+    "uptimeWeek": "54.08%",
+    "uptimeMonth": "54.08%",
+    "uptimeYear": "54.08%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-08-22": 73
+      "2026-08-22": 101
     }
   },
   {
