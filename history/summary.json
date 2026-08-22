@@ -22,18 +22,20 @@
     "url": "wss://ais.openwaters.io/v1/stream",
     "icon": "https://icons.duckduckgo.com/ip3/ais.openwaters.io.ico",
     "slug": "ais-web-socket",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "up",
+    "uptime": "60.89%",
+    "uptimeDay": "60.89%",
+    "uptimeWeek": "60.89%",
+    "uptimeMonth": "60.89%",
+    "uptimeYear": "60.89%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-08-22": 27
+    }
   },
   {
     "name": "AIS vessels snapshot",
