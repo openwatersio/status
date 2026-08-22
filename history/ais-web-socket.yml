@@ -1,7 +1,7 @@
 url: wss://ais.openwaters.io/v1/stream
-status: up
-code: 200
+status: down
+code: 0
 responseTime: 0
-lastUpdated: 2026-08-22T17:59:55.446Z
+lastUpdated: 2026-08-22T18:34:58.036Z
 startTime: 2026-08-22T17:52:29.396Z
 generator: Upptime <https://github.com/upptime/upptime>
