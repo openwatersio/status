@@ -5,7 +5,7 @@ assignees: [bkeepers] # downtime issues are assigned, so they notify by email
 
 sites:
   - name: AIS stream
-    # 503 when an open-feed upstream is silent or the server's own loopback subscriber stops receiving events
+    # 503 when the server's own loopback subscriber stops receiving events (the stream delivers nothing)
     url: https://ais.openwaters.io/health
   - name: AIS WebSocket
     check: ws
