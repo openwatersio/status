@@ -1,7 +1,7 @@
 url: https://ais.openwaters.io/health
-status: down
-code: 503
-responseTime: 522
-lastUpdated: 2026-09-02T14:13:56.417Z
+status: up
+code: 200
+responseTime: 514
+lastUpdated: 2026-09-02T14:43:21.089Z
 startTime: 2026-08-22T17:52:28.260Z
 generator: Upptime <https://github.com/upptime/upptime>
