@@ -13,6 +13,15 @@ sites:
     body: '{"type":"subscribe","bbox":[[59,10,60,11]]}'
   - name: AIS vessels snapshot
     url: https://ais.openwaters.io/v1/vessels?bbox=59,10,60,11
+  - name: AIS MCP server
+    # one stateless JSON-RPC call; 200 means the endpoint answers AI assistants
+    url: https://ais.openwaters.io/mcp
+    method: POST
+    headers:
+      - "Content-Type: application/json"
+      - "Accept: application/json, text/event-stream"
+    body: '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
+    expectedStatusCodes: [200]
   - name: AIS live map
     url: https://openwatersio.github.io/aiscast/
   - name: openwaters.io
