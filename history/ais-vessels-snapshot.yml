@@ -1,7 +1,7 @@
 url: https://ais.openwaters.io/v1/vessels?bbox=59,10,60,11
 status: up
 code: 200
-responseTime: 1281
-lastUpdated: 2026-10-13T03:14:32.435Z
+responseTime: 1076
+lastUpdated: 2026-10-14T01:27:10.202Z
 startTime: 2026-08-22T17:52:30.028Z
 generator: Upptime <https://github.com/upptime/upptime>
