@@ -1,19 +1,44 @@
 owner: openwatersio
 repo: status
-user-agent: openwatersio
-assignees: [bkeepers] # downtime issues are assigned, so they notify by email
+user-agent: OpenWatersStatus/1.0 (+https://status.openwaters.io) # meets openwaters.io/api/user-agent
+assignees: [bkeepers, eddycoriolis] # downtime issues are assigned, so they notify by email
 
+# Names are prefixed by service so the list reads in groups; Upptime has no sections. `slug` keeps
+# each existing monitor's history across the rename. maxResponseTime is about 3x normal, so a slow
+# service shows as degraded rather than up.
 sites:
-  - name: AIS stream
+  # Websites
+  - name: Website · openwaters.io
+    slug: openwaters-io
+    url: https://openwaters.io
+    maxResponseTime: 2000
+  - name: Website · slackwater.xyz
+    slug: slackwater-xyz
+    url: https://slackwater.xyz
+    maxResponseTime: 3000
+
+  # AIS (ais.openwaters.io)
+  - name: AIS · Stream
+    slug: ais-stream
     # 503 when the server's own loopback subscriber stops receiving events (the stream delivers nothing)
     url: https://ais.openwaters.io/health
-  - name: AIS WebSocket
+    maxResponseTime: 2000
+  - name: AIS · WebSocket
+    slug: ais-web-socket
     check: ws
     url: wss://ais.openwaters.io/v1/stream
     body: '{"type":"subscribe","bbox":[[59,10,60,11]]}'
-  - name: AIS vessels snapshot
+  - name: AIS · Vessels API
+    slug: ais-vessels-snapshot
     url: https://ais.openwaters.io/v1/vessels?bbox=59,10,60,11
-  - name: AIS MCP server
+    maxResponseTime: 4000
+  - name: AIS · Vessel tiles
+    slug: ais-vessel-tiles
+    # a busy tile off Norway, so a tile that builds empty or slowly shows
+    url: https://ais.openwaters.io/v1/vessels/tiles/6/33/18
+    maxResponseTime: 3000
+  - name: AIS · MCP server
+    slug: ais-mcp-server
     # one stateless JSON-RPC call; 200 means the endpoint answers AI assistants
     url: https://ais.openwaters.io/mcp
     method: POST
@@ -22,17 +47,62 @@ sites:
       - "Accept: application/json, text/event-stream"
     body: '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
     expectedStatusCodes: [200]
-  - name: AIS live map
-    url: https://openwatersio.github.io/aiscast/
-  - name: openwaters.io
-    url: https://openwaters.io
+    maxResponseTime: 2500
+  - name: AIS · Live map
+    slug: ais-live-map
+    url: https://openwaters.io/ais/vessels
+    maxResponseTime: 2000
+
+  # Tides and currents API (api.openwaters.io); both run the prediction engine, not just the gateway
+  - name: Tides API · Tide extremes
+    slug: tides-api-extremes
+    url: https://api.openwaters.io/tides/extremes?latitude=26.772&longitude=-80.05
+    __dangerous__body_down_if_regex_missing: '"extremes":\[\{'
+    maxResponseTime: 6000
+  - name: Tides API · Current events
+    slug: tides-api-currents
+    url: https://api.openwaters.io/currents/events?latitude=47.6&longitude=-122.4
+    __dangerous__body_down_if_regex_missing: '"events":\[\{'
+    maxResponseTime: 6000
+
+  # Charts (tiles.openwaters.io)
+  - name: Charts · Seamap tiles
+    slug: charts-seamap-tiles
+    url: https://tiles.openwaters.io/seamap/9/282/149.pbf
+    maxResponseTime: 3000
+  - name: Charts · Seamap style
+    slug: charts-seamap-style
+    url: https://tiles.openwaters.io/seamap/style.json
+    maxResponseTime: 3000
+  - name: Charts · Seascape tiles
+    slug: charts-seascape-tiles
+    url: https://tiles.openwaters.io/seascape/9/282/149.webp
+    maxResponseTime: 2000
+  - name: Charts · Map fonts
+    slug: charts-map-fonts
+    # every Open Waters map style loads its labels from here
+    url: https://tiles.openwaters.io/fonts/Noto%20Sans%20Regular/0-255.pbf
+    maxResponseTime: 3000
+
+  # Crowd-sourced depth
+  - name: Crowd depth · Bathymetry API
+    slug: crowd-depth-api
+    url: https://api.openwaters.io/bathymetry
+    __dangerous__body_down_if_text_missing: '"success":true'
+    maxResponseTime: 1500
+  - name: Crowd depth · Legacy ingest
+    slug: crowd-depth-legacy
+    # older vessels still post soundings to the root of this host
+    url: https://depth.openwaters.io/
+    __dangerous__body_down_if_text_missing: '"success":true'
+    maxResponseTime: 1500
 
 status-website:
   cname: status.openwaters.io
   logoUrl: https://openwaters.io/favicon.svg
   name: Open Waters Status
   introTitle: "**Open Waters** service status"
-  introMessage: Live status and uptime history for the [AIS stream](https://openwaters.io/ais/) and the rest of Open Waters. Checks run every five minutes from GitHub Actions; incidents are tracked as issues in the [status repository](https://github.com/openwatersio/status).
+  introMessage: Live status and uptime history for Open Waters services, grouped by service - the [AIS network](https://openwaters.io/ais/), the [tides and currents API](https://openwaters.io/api/tides/), the [Seamap and Seascape charts](https://openwaters.io/charts/seamap/), crowd-sourced depth, and our websites. Checks run from GitHub Actions; they're scheduled every five minutes but GitHub currently runs them up to a few hours apart, which we're fixing. Incidents are tracked as issues in the [status repository](https://github.com/openwatersio/status).
   navbar:
     - title: Status
       href: /
