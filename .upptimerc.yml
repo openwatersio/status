@@ -102,7 +102,7 @@ status-website:
   logoUrl: https://openwaters.io/favicon.svg
   name: Open Waters Status
   introTitle: "**Open Waters** service status"
-  introMessage: Live status and uptime history for Open Waters services, grouped by service - the [AIS network](https://openwaters.io/ais/), the [tides and currents API](https://openwaters.io/api/tides/), the [Seamap and Seascape charts](https://openwaters.io/charts/seamap/), crowd-sourced depth, and our websites. Checks run from GitHub Actions; they're scheduled every five minutes but GitHub currently runs them up to a few hours apart, which we're fixing. Incidents are tracked as issues in the [status repository](https://github.com/openwatersio/status).
+  introMessage: Live status and uptime history for Open Waters services, grouped by service - the [AIS network](https://openwaters.io/ais/), the [tides and currents API](https://openwaters.io/api/tides/), the [Seamap and Seascape charts](https://openwaters.io/charts/seamap/), crowd-sourced depth, and our websites. Checks run every five minutes on GitHub Actions. Incidents are tracked as issues in the [status repository](https://github.com/openwatersio/status).
   navbar:
     - title: Status
       href: /
