@@ -206,18 +206,20 @@
     "url": "https://tiles.openwaters.io/seamap/style.json",
     "icon": "https://icons.duckduckgo.com/ip3/tiles.openwaters.io.ico",
     "slug": "charts-seamap-style",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 1524,
-    "timeDay": 1265,
-    "timeWeek": 1524,
-    "timeMonth": 1524,
-    "timeYear": 1524,
-    "dailyMinutesDown": {}
+    "status": "degraded",
+    "uptime": "99.99%",
+    "uptimeDay": "99.98%",
+    "uptimeWeek": "99.99%",
+    "uptimeMonth": "99.99%",
+    "uptimeYear": "99.99%",
+    "time": 5130,
+    "timeDay": 10411,
+    "timeWeek": 5130,
+    "timeMonth": 5130,
+    "timeYear": 5130,
+    "dailyMinutesDown": {
+      "2026-10-24": 0
+    }
   },
   {
     "name": "Charts · Seascape tiles",
