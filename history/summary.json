@@ -206,19 +206,19 @@
     "url": "https://tiles.openwaters.io/seamap/style.json",
     "icon": "https://icons.duckduckgo.com/ip3/tiles.openwaters.io.ico",
     "slug": "charts-seamap-style",
-    "status": "degraded",
-    "uptime": "99.99%",
-    "uptimeDay": "99.98%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "99.99%",
-    "time": 5130,
-    "timeDay": 10411,
-    "timeWeek": 5130,
-    "timeMonth": 5130,
-    "timeYear": 5130,
+    "status": "up",
+    "uptime": "99.72%",
+    "uptimeDay": "99.43%",
+    "uptimeWeek": "99.72%",
+    "uptimeMonth": "99.72%",
+    "uptimeYear": "99.72%",
+    "time": 4510,
+    "timeDay": 7409,
+    "timeWeek": 4510,
+    "timeMonth": 4510,
+    "timeYear": 4510,
     "dailyMinutesDown": {
-      "2026-10-24": 0
+      "2026-10-24": 8
     }
   },
   {
