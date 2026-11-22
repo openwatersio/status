@@ -188,19 +188,19 @@
     "url": "https://tiles.openwaters.io/seamap/9/282/149.pbf",
     "icon": "https://icons.duckduckgo.com/ip3/tiles.openwaters.io.ico",
     "slug": "charts-seamap-tiles",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.95%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 335,
-    "timeDay": 154,
-    "timeWeek": 197,
-    "timeMonth": 335,
-    "timeYear": 335,
+    "status": "degraded",
+    "uptime": "99.98%",
+    "uptimeDay": "99.49%",
+    "uptimeWeek": "99.93%",
+    "uptimeMonth": "99.98%",
+    "uptimeYear": "99.98%",
+    "time": 1038,
+    "timeDay": 8185,
+    "timeWeek": 2869,
+    "timeMonth": 1038,
+    "timeYear": 1038,
     "dailyMinutesDown": {
-      "2026-11-22": 1
+      "2026-11-22": 7
     }
   },
   {
@@ -208,19 +208,19 @@
     "url": "https://tiles.openwaters.io/seamap/style.json",
     "icon": "https://icons.duckduckgo.com/ip3/tiles.openwaters.io.ico",
     "slug": "charts-seamap-style",
-    "status": "down",
-    "uptime": "99.99%",
-    "uptimeDay": "99.62%",
-    "uptimeWeek": "99.95%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "99.99%",
-    "time": 1806,
-    "timeDay": 662,
-    "timeWeek": 916,
-    "timeMonth": 1806,
-    "timeYear": 1806,
+    "status": "degraded",
+    "uptime": "99.97%",
+    "uptimeDay": "99.16%",
+    "uptimeWeek": "99.88%",
+    "uptimeMonth": "99.97%",
+    "uptimeYear": "99.97%",
+    "time": 2367,
+    "timeDay": 8523,
+    "timeWeek": 3508,
+    "timeMonth": 2367,
+    "timeYear": 2367,
     "dailyMinutesDown": {
-      "2026-11-22": 5
+      "2026-11-22": 12
     }
   },
   {
@@ -229,19 +229,17 @@
     "icon": "https://icons.duckduckgo.com/ip3/tiles.openwaters.io.ico",
     "slug": "charts-seascape-tiles",
     "status": "up",
-    "uptime": "99.99%",
-    "uptimeDay": "99.67%",
-    "uptimeWeek": "99.95%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "99.99%",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 158,
     "timeDay": 158,
     "timeWeek": 127,
     "timeMonth": 158,
     "timeYear": 158,
-    "dailyMinutesDown": {
-      "2026-11-22": 5
-    }
+    "dailyMinutesDown": {}
   },
   {
     "name": "Charts · Map fonts",
@@ -249,18 +247,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/tiles.openwaters.io.ico",
     "slug": "charts-map-fonts",
     "status": "down",
-    "uptime": "99.99%",
-    "uptimeDay": "99.71%",
-    "uptimeWeek": "99.96%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "99.99%",
+    "uptime": "99.98%",
+    "uptimeDay": "99.25%",
+    "uptimeWeek": "99.89%",
+    "uptimeMonth": "99.98%",
+    "uptimeYear": "99.98%",
     "time": 892,
     "timeDay": 8140,
     "timeWeek": 2800,
     "timeMonth": 892,
     "timeYear": 892,
     "dailyMinutesDown": {
-      "2026-11-22": 4
+      "2026-11-22": 11
     }
   },
   {
