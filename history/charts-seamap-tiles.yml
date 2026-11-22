@@ -1,7 +1,7 @@
 url: https://tiles.openwaters.io/seamap/9/282/149.pbf
-status: degraded
-code: 500
-responseTime: 24247
-lastUpdated: 2026-11-22T00:27:17.123Z
+status: up
+code: 200
+responseTime: 272
+lastUpdated: 2026-11-22T00:31:09.950Z
 startTime: 2026-10-22T19:59:16.067Z
 generator: Upptime <https://github.com/upptime/upptime>
