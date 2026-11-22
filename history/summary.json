@@ -206,54 +206,60 @@
     "url": "https://tiles.openwaters.io/seamap/style.json",
     "icon": "https://icons.duckduckgo.com/ip3/tiles.openwaters.io.ico",
     "slug": "charts-seamap-style",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
+    "uptimeDay": "99.89%",
+    "uptimeWeek": "99.98%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1849,
-    "timeDay": 1158,
-    "timeWeek": 1023,
-    "timeMonth": 1849,
-    "timeYear": 1849,
-    "dailyMinutesDown": {}
+    "time": 1806,
+    "timeDay": 662,
+    "timeWeek": 916,
+    "timeMonth": 1806,
+    "timeYear": 1806,
+    "dailyMinutesDown": {
+      "2026-11-22": 2
+    }
   },
   {
     "name": "Charts · Seascape tiles",
     "url": "https://tiles.openwaters.io/seascape/9/282/149.webp",
     "icon": "https://icons.duckduckgo.com/ip3/tiles.openwaters.io.ico",
     "slug": "charts-seascape-tiles",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
+    "uptimeDay": "99.91%",
+    "uptimeWeek": "99.99%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 157,
-    "timeDay": 128,
-    "timeWeek": 114,
+    "timeDay": 138,
+    "timeWeek": 119,
     "timeMonth": 157,
     "timeYear": 157,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-11-22": 1
+    }
   },
   {
     "name": "Charts · Map fonts",
     "url": "https://tiles.openwaters.io/fonts/Noto%20Sans%20Regular/0-255.pbf",
     "icon": "https://icons.duckduckgo.com/ip3/tiles.openwaters.io.ico",
     "slug": "charts-map-fonts",
-    "status": "up",
+    "status": "degraded",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.98%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 189,
-    "timeDay": 130,
-    "timeWeek": 130,
-    "timeMonth": 189,
-    "timeYear": 189,
-    "dailyMinutesDown": {}
+    "time": 916,
+    "timeDay": 12165,
+    "timeWeek": 3139,
+    "timeMonth": 916,
+    "timeYear": 916,
+    "dailyMinutesDown": {
+      "2026-11-22": 0
+    }
   },
   {
     "name": "Crowd depth · Bathymetry API",
