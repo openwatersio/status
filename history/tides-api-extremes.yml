@@ -1,7 +1,7 @@
 url: https://api.openwaters.io/tides/extremes?latitude=26.772&longitude=-80.05
 status: up
 code: 200
-responseTime: 1337
-lastUpdated: 2026-11-22T02:42:06.632Z
+responseTime: 1281
+lastUpdated: 2026-11-23T03:17:18.201Z
 startTime: 2026-10-22T19:59:13.507Z
 generator: Upptime <https://github.com/upptime/upptime>
