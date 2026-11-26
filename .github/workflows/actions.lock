@@ -6,7 +6,7 @@ workflows:
     '.github/workflows/graphs.yml':
         - 'actions/checkout@v6'
         - 'actions/create-github-app-token@v3'
-        - 'actions/setup-node@v6'
+        - 'actions/setup-node@v7'
         - 'upptime/uptime-monitor@v1.46.5'
     '.github/workflows/response-time.yml':
         - 'actions/checkout@v6'
@@ -15,7 +15,7 @@ workflows:
     '.github/workflows/setup.yml':
         - 'actions/checkout@v6'
         - 'actions/create-github-app-token@v3'
-        - 'actions/setup-node@v6'
+        - 'actions/setup-node@v7'
         - 'benc-uk/workflow-dispatch@v1'
         - 'peaceiris/actions-gh-pages@v4'
         - 'upptime/uptime-monitor@v1.46.5'
@@ -59,9 +59,9 @@ dependencies:
         commit: 'sha1-f418cff399f7aef4c2f0ad47e25ca7a6abbdd6fc'
         owner_id: 44036562
         repo_id: 642580244
-    'actions/setup-node@v6':
-        ref: 'v6'
-        commit: 'sha1-249970729cb0ef3589644e2896645e5dc5ba9c38'
+    'actions/setup-node@v7':
+        ref: 'v7'
+        commit: 'sha1-949feb2413d6458794dcd2491c4babbbce0c15c1'
         owner_id: 44036562
         repo_id: 189476904
     'benc-uk/workflow-dispatch@v1':
